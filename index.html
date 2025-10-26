@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in - Warmerise Replica</title>
+    <link href="styles.css" media="screen" rel="stylesheet" /> 
+</head>
+<body id="global_page_user-auth-login">
+
+    <div id="global_header">
+        <div class="header-top-bar">
+            <div class="logo">
+                <a href="/">Warmerise</a>
+            </div>
+
+            <div id='core_menu_mini_menu'>
+                <ul>
+                    <li><a href="/login" class="core_mini_auth btn sign-in-btn">SIGN IN</a></li>
+                    <li><a href="/signup" class="core_mini_signup btn sign-up-btn">SIGN UP</a></li>
+                    <li id="global_search_form_container">
+                        <form id="global_search_form" action="/search" method="get">
+                            <input type='text' class='text suggested' name='query' id='global_search_field' placeholder='Search' size='20' maxlength='100' alt='Search' />
+                            <button type="submit" class="search-submit" name="search-submit" value="Search"></button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="layout_core_menu_main">
+            <ul class="navigation">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Play Now</a></li>
+                <li><a href="#">Top 100</a></li>
+                <li><a href="#">Clans</a></li>
+                <li><a href="/polls">Polls</a></li>
+                <li><a href="/videos">Videos</a></li>
+                <li><a href="/forums">Forum</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id='global_wrapper'>
+        <div id='global_content'>
+            <div class="layout_page_user_auth_login">
+                <div class="generic_layout_container layout_main">
+                    <div class="generic_layout_container layout_middle">
+                        <div class="generic_layout_container layout_core_content">
+                            
+                            <form id="user_form_login" class="global_form" method="post">
+                                <div>
+                                    <h3>Member Sign In</h3>
+                                    <p class="form-description">If you already have an account, please enter your details below.
+                                        If you don't have one yet, please <a href='/signup'>sign up</a> first.</p>
+                                    
+                                    <div class="form-elements">
+                                        
+                                        <div class="form-wrapper">
+                                            <div class="form-label"><label for="email_field" class="required">Email Address</label></div>
+                                            <div class="form-element">
+                                                <input type="email" name="email_field" id="email_field" value="" class="text" tabindex="1" autofocus="autofocus" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-wrapper">
+                                            <div class="form-label"><label for="password" class="required">Password</label></div>
+                                            <div class="form-element">
+                                                <input type="password" name="password" id="password" value="" tabindex="2" />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-wrapper form-actions" id="buttons-wrapper">
+                                            <fieldset>
+                                                <div id="submit-wrapper" class="form-wrapper">
+                                                    <div id="submit-element" class="form-element">
+                                                        <button name="submit" id="submit" type="submit" tabindex="3">Sign In</button>
+                                                    </div>
+                                                </div>
+                                                <div id="remember-wrapper" class="form-wrapper remember-me-check">
+                                                    <div id="remember-element" class="form-element">
+                                                        <input type="checkbox" name="remember" id="remember" value="1" tabindex="4" checked/>
+                                                        <label for="remember" class="optional">Remember Me</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        
+                                        <div id="forgot-wrapper" class="form-wrapper">
+                                            <div id="forgot-element" class="form-element">
+                                                <span><a href='/user/auth/forgot'>Forgot Password?</a></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="global_footer">
+        <div class="layout_page_footer">
+            <div class="layout_core_menu_footer">
+                Copyright &copy;2025  &nbsp;-&nbsp; <a href="/help/privacy">Privacy</a> &nbsp;-&nbsp; <a href="/help/terms">Terms of Service</a> &nbsp;-&nbsp; <a href="/help/contact">Contact</a> &nbsp;-&nbsp; <a href="/login?mobile=1">Mobile Site</a> &nbsp;-&nbsp; <a href="/pages/Demo">Warmerise On Your Site</a> &nbsp;-&nbsp; <a href="/store">Store</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
